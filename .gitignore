@@ -2,6 +2,7 @@
 *.swo
 *.swp
 .bundle
+.shoulda-matchers
 .svn/
 .yardoc
 coverage
