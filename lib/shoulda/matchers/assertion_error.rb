@@ -12,5 +12,9 @@ module Shoulda
     else
       raise 'No unit test library available'
     end
+
+    if singleton_method_defined?(:private_constant)
+      private_constant :AssertionError
+    end
   end
 end
