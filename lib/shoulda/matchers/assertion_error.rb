@@ -13,7 +13,7 @@ module Shoulda
       raise 'No unit test library available'
     end
 
-    if singleton_method_defined?(:private_constant)
+    if singleton_class.method_defined?(:private_constant)
       private_constant :AssertionError
     end
   end
