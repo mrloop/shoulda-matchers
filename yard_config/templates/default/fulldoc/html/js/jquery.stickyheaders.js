@@ -264,8 +264,6 @@ window.StickyHeaders = (function ($) {
     setHeaderRanges();
     setCurrentHeaderIndex();
 
-    listenToScroll(contentContainer, onScroll);
-
     return me;
   }
 
@@ -273,6 +271,8 @@ window.StickyHeaders = (function ($) {
     setHeaders();
     setHeaderRanges();
     render();
+
+    listenToScroll(contentContainer, onScroll);
   }
 
   me.getHeaders = function () {
